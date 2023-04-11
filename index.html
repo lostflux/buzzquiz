@@ -13,52 +13,41 @@
     </div>
     <div class="answer-options-container">
       <ul class="answer-options-list">
+        <input type="radio" name="answer" id="none-selected" value="none-selected" checked>
         <li class="answer-option">
           <input type="radio" name="answer" id="answer1" value="Paris">
-          <label  for="answer1">
-            <div class="answer-label">
-              <p class="answer-label-text">Paris</p>
-            </div>
+          <label class="answer-label" id="answer1-label" for="answer1">
+            <img class="answer-label-image" src="https://source.unsplash.com/lyDDaq7zm2I" />
           </label>
         </li>
         <li class="answer-option">
           <input type="radio" name="answer" id="answer2" value="London">
-          <label  for="answer2">
-            <div class="answer-label">
+          <label class="answer-label" id="answer2-label" for="answer2">
               <p class="answer-label-text">London</p>
-            </div>
           </label>
         </li>
         <li class="answer-option">
           <input type="radio" name="answer" id="answer3" value="Berlin">
-          <label for="answer3">
-            <div class="answer-label">
-              <p class="answer-label-text">England is not really a city but sure.</p>
-            </div>
+          <label class="answer-label" id="answer3-label" for="answer3">
+            <p class="answer-label-text">England is not really a city but sure.</p>
           </label>
         </li>
         <li class="answer-option">
           <input type="radio" name="answer" id="answer4" value="Rome">
-          <label  for="answer4">
-            <div class="answer-label">
-              <p class="answer-label-text">Rome</p>
-            </div>
+          <label class="answer-label" id="answer4-label" for="answer4">
+            <p class="answer-label-text">Rome</p>
           </label>
         </li>
         <li class="answer-option">
           <input type="radio" name="answer" id="answer5" value="Madrid">
-          <label  for="answer5">
-            <div class="answer-label">
+          <label class="answer-label"  id="answer5-label" for="answer5">
               <p class="answer-label-text">Madrid</p>
-            </div>
           </label>
         </li>
         <li class="answer-option">
           <input type="radio" name="answer" id="answer6" value="Moscow">
-          <label  for="answer6">
-            <div class="answer-label">
+          <label class="answer-label" id="answer6-label" for="answer6">
               <p class="answer-label-text">Moscow</p>
-            </div>
           </label>
         </li>
       </ul>
@@ -67,5 +56,13 @@
       <button id="submit-answer-button">Submit</button>
     </div>
   </div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+
+  <script src="main.js"></script>
 </body>
 </html>
