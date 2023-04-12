@@ -1,6 +1,34 @@
 
 console.log('main.js loaded');
 
+const state = {
+  questions: [],
+  currentQuestion: 0,
+  answerTally: {
+    foundation: 0,
+    krypton: 0,
+    mandalorian: 0,
+    ringsOfPower: 0,
+    expanse: 0,
+    westworld: 0
+  }
+}
+
+// load data from assets/data/questions.json
+$.getJSON("assets/data/questions.json", function(data) {
+  console.log(data);
+  state.questions = data;
+  state.questions.shuffle();
+  renderQuestion();
+});
+
+
+
+
+
+
+
+
 function getAnswer() {
   return $("input[name='answer']:checked").val();
 }
@@ -13,14 +41,7 @@ function resetCheckedOption() {
 }
 
 
-const answerTally = {
-  foundation: 0,
-  krypton: 0,
-  mandalorian: 0,
-  ringsOfPower: 0,
-  expanse: 0,
-  westworld: 0
-}
+
 
 
 $("#submit-answer-button").on("click", function() {
@@ -32,37 +53,36 @@ $("#submit-answer-button").on("click", function() {
     return;
   }
   
-  if (answerTally[answer] !== undefined) {
-    answerTally[answer]++;
+  if (state.answerTally[answer] !== undefined) {
+    state.answerTally[answer]++;
   } else {
-    console.error(`Unknown answer: ${answer}`);
+    console.error(`Unknown answer option: ${answer}`);
   }
-  console.log(answerTally);
+  console.log(state.answerTally);
 
   renderQuestion();
 
 });
 
-const movies = {
-  foundation: 1
-}
-
-var currentQuestion = 0;
-
 
 function renderQuestion() {
-  if (currentQuestion >= questions.length) {
+  if (state.currentQuestion >= state.questions.length) {
+    tallyResults();
     console.error("No more questions!");
     return;
   }
 
-  const question = questions[currentQuestion++];
+  const question = state.questions[state.currentQuestion++];
   const questionText = question.prompt;
   const questionId = question.id;
   // const answers = question.answers;
 
   // set question
   $("#question-text").text(questionText);
+
+  // if last question, change button text
+  // to "submit"
+  $("#submit-answer-button").text(state.currentQuestion === state.questions.length ? "Submit" : "Next");
   
   // reset checked option
 
@@ -83,7 +103,7 @@ function renderQuestion() {
     $(`#answer${option}`).val(answerKey);
 
     const innerHtml =  answerText === ""
-      ? `<img class="answer-label-image" src="assets/images/${answerKey}/${questionId}.jpg" />`
+      ? `<img class="answer-label-image" src="assets/data/images/${answerKey}/${questionId}.jpg" />`
       : `<p class="answer-label-text">${answerText}</p>`;
 
     $(`#answer${option}-label`).empty();
@@ -111,248 +131,32 @@ Array.prototype.shuffle = function() {
   }
 }
 
+function tallyResults() {
+  console.log("tallying results");
 
-// questions
+  const results = Object.entries(state.answerTally);
+  results.sort(function(a, b) {
+    return b[1] - a[1];
+  });
 
-const questions = [
-  {
-    id: 1,
-    prompt: "Which image most resonates with you?",
-    answers: [
-      {
-        key: "foundation",
-        value: "",
-      },
-      {
-        key: "krypton",
-        value: "",
-      },
-      {
-        key: "mandalorian",
-        value: "",
-      },
-      {
-        key: "ringsOfPower",
-        value: "",
-      },
-      {
-        key: "expanse",
-        value: "",
-      },
-      {
-        key: "westworld",
-        value: "",
-      }
-    ]
-  },
-  {
-    id: 2,
-    prompt: "Which image most resonates with you?",
-    answers: [
-      {
-        key: "foundation",
-        value: "",
-      },
-      {
-        key: "krypton",
-        value: "",
-      },
-      {
-        key: "mandalorian",
-        value: "",
-      },
-      {
-        key: "ringsOfPower",
-        value: "",
-      },
-      {
-        key: "expanse",
-        value: "",
-      },
-      {
-        key: "westworld",
-        value: "",
-      }
-    ]
-  },
-  {
-    id: 3,
-    prompt: "Which image most resonates with you?",
-    answers: [
-      {
-        key: "foundation",
-        value: "",
-      },
-      {
-        key: "krypton",
-        value: "",
-      },
-      {
-        key: "mandalorian",
-        value: "",
-      },
-      {
-        key: "ringsOfPower",
-        value: "",
-      },
-      {
-        key: "expanse",
-        value: "",
-      },
-      {
-        key: "westworld",
-        value: "",
-      }
-    ]
-  },
-  {
-    id: 4,
-    prompt: "Which image most resonates with you?",
-    answers: [
-      {
-        key: "foundation",
-        value: "",
-      },
-      {
-        key: "krypton",
-        value: "",
-      },
-      {
-        key: "mandalorian",
-        value: "",
-      },
-      {
-        key: "ringsOfPower",
-        value: "",
-      },
-      {
-        key: "expanse",
-        value: "",
-      },
-      {
-        key: "westworld",
-        value: "",
-      }
-    ]
-  },
-  {
-    id: 5,
-    prompt: "Which image most resonates with you?",
-    answers: [
-      {
-        key: "foundation",
-        value: "",
-      },
-      {
-        key: "krypton",
-        value: "",
-      },
-      {
-        key: "mandalorian",
-        value: "",
-      },
-      {
-        key: "ringsOfPower",
-        value: "",
-      },
-      {
-        key: "expanse",
-        value: "",
-      },
-      {
-        key: "westworld",
-        value: "",
-      }
-    ]
-  },
-  {
-    id: 6,
-    prompt: "Which image most resonates with you?",
-    answers: [
-      {
-        key: "foundation",
-        value: "",
-      },
-      {
-        key: "krypton",
-        value: "",
-      },
-      {
-        key: "mandalorian",
-        value: "",
-      },
-      {
-        key: "ringsOfPower",
-        value: "",
-      },
-      {
-        key: "expanse",
-        value: "",
-      },
-      {
-        key: "westworld",
-        value: "",
-      }
-    ]
-  }
-  ,{
-    id: 7,
-    prompt: "Which image most resonates with you?",
-    answers: [
-      {
-        key: "foundation",
-        value: "",
-      },
-      {
-        key: "krypton",
-        value: "",
-      },
-      {
-        key: "mandalorian",
-        value: "",
-      },
-      {
-        key: "ringsOfPower",
-        value: "",
-      },
-      {
-        key: "expanse",
-        value: "",
-      },
-      {
-        key: "westworld",
-        value: "",
-      }
-    ]
-  }
-  ,{
-    id: 8,
-    prompt: "Which image most resonates with you?",
-    answers: [
-      {
-        key: "foundation",
-        value: "",
-      },
-      {
-        key: "krypton",
-        value: "",
-      },
-      {
-        key: "mandalorian",
-        value: "",
-      },
-      {
-        key: "ringsOfPower",
-        value: "",
-      },
-      {
-        key: "expanse",
-        value: "",
-      },
-      {
-        key: "westworld",
-        value: "",
-      }
-    ]
-  }
-]
+  console.log(results);
+
+  const topResult = results[0];
+  const topResultKey = topResult[0];
+  const topResultValue = topResult[1];
+
+  const secondResult = results[1];
+  const secondResultKey = secondResult[0];
+  const secondResultValue = secondResult[1];
+
+  const thirdResult = results[2];
+  const thirdResultKey = thirdResult[0];
+  const thirdResultValue = thirdResult[1];
+
+  $("#result-1").text(`${topResultKey}: ${topResultValue}`);
+  $("#result-2").text(`${secondResultKey}: ${secondResultValue}`);
+  $("#result-3").text(`${thirdResultKey}: ${thirdResultValue}`);
+
+  $("#results").show();
+}
+

@@ -80,19 +80,21 @@ body {
   justify-content: center;
   align-items: center;
 
-  .container {
+  .frontmatter-container {
     width: 100%;
     height: fit-content;
     vertical-align: middle;
     margin: 0 50px;
 
 
-    .question {
+    .frontmatter {
       width: 100%;
       height: fit-content;
+      max-height: 100vh;
+      overflow-y: scroll;
       padding: 30px;
   
-      #question-text {
+      .frontmatter-title {
         margin: 0 auto;
         width: fit-content;
       }
@@ -155,8 +157,13 @@ body {
             }
 
             .answer-label-image {
-              max-width: 100%;
-              max-height: 100%;
+              /* max-width: 100%;
+              max-height: 100%; */
+              
+              /* min-width: 100%;
+              min-height: 100%; */
+              width: 100%;
+              aspect-ratio: 1/1;
 
               /* maintain aspect ratio! */
               /* width: 100%;
