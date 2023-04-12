@@ -2,6 +2,13 @@
 
 *Amittai, BuzzFeed Quiz*
 
+> **Note**
+>
+> I got into the class late (end of week 2), and the prof said he would
+> give me time to catch up with the assignments that had alredy
+> happened.
+> Consequently, I submitted this assignment a day late.
+
 This program simulates a BuzzFeed quiz to recommend which dystopian world
 is ideal for the user.
 
@@ -52,9 +59,9 @@ I did both the CSS focus and the Javascript focus.
 
 ![Selected State](assets/images/selected.png)
 
-### Scroll Bar
+### Progress Bar
 
-![Scroll Bar](assets/images/scroll-bar.png)
+![Progress Bar](assets/images/progress-bar.png)
 
 ### Quiz Complete
 
