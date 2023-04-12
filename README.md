@@ -28,6 +28,22 @@ Nothing really.
 
 I did both the CSS focus and the Javascript focus.
 
+> **_Why include the Javascript file(s) at the end of the body?_**
+>
+> I'm guessing the browser loads page content sequentially.
+> Since Javascript bundle code can be substantial, loading the Javascript file
+> can take significant time.
+>
+> HOwever, in some cases the JS is not _needed_ for the initial render of the 
+> page! Therefore, including the JS at the end of the body allows the browser
+> to load most page content first, then load the JS in the background.
+>
+> This gives the impression that the page loads faster.
+>
+> On the other hand, if the initial render depends on data, etc. that is
+> loaded by the Javascript code, does it still help to include the JS file
+> at the end of the body?
+
 ### On the CSS Side
 
 - On the CSS side, I added animations/transitions for the
