@@ -1,7 +1,8 @@
 [
   {
     "id": 1,
-    "prompt": "Which image most resonates with you?",
+    "prompt": "Be swayed not by visual trickery; true choice lies in the heart.",
+    "weight": 1,
     "answers": [
       {
         "key": "foundation",
@@ -29,214 +30,517 @@
       }
     ]
   },
-  {
-    "id": 2,
-    "prompt": "Which image most resonates with you?",
-    "answers": [
-      {
-        "key": "foundation",
-        "value": ""
-      },
-      {
-        "key": "krypton",
-        "value": ""
-      },
-      {
-        "key": "mandalorian",
-        "value": ""
-      },
-      {
-        "key": "ringsOfPower",
-        "value": ""
-      },
-      {
-        "key": "expanse",
-        "value": ""
-      },
-      {
-        "key": "westworld",
-        "value": ""
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "prompt": "Which image most resonates with you?",
-    "answers": [
-      {
-        "key": "foundation",
-        "value": ""
-      },
-      {
-        "key": "krypton",
-        "value": ""
-      },
-      {
-        "key": "mandalorian",
-        "value": ""
-      },
-      {
-        "key": "ringsOfPower",
-        "value": ""
-      },
-      {
-        "key": "expanse",
-        "value": ""
-      },
-      {
-        "key": "westworld",
-        "value": ""
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "prompt": "Which image most resonates with you?",
-    "answers": [
-      {
-        "key": "foundation",
-        "value": ""
-      },
-      {
-        "key": "krypton",
-        "value": ""
-      },
-      {
-        "key": "mandalorian",
-        "value": ""
-      },
-      {
-        "key": "ringsOfPower",
-        "value": ""
-      },
-      {
-        "key": "expanse",
-        "value": ""
-      },
-      {
-        "key": "westworld",
-        "value": ""
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "prompt": "Which image most resonates with you?",
-    "answers": [
-      {
-        "key": "foundation",
-        "value": ""
-      },
-      {
-        "key": "krypton",
-        "value": ""
-      },
-      {
-        "key": "mandalorian",
-        "value": ""
-      },
-      {
-        "key": "ringsOfPower",
-        "value": ""
-      },
-      {
-        "key": "expanse",
-        "value": ""
-      },
-      {
-        "key": "westworld",
-        "value": ""
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "prompt": "Which image most resonates with you?",
-    "answers": [
-      {
-        "key": "foundation",
-        "value": ""
-      },
-      {
-        "key": "krypton",
-        "value": ""
-      },
-      {
-        "key": "mandalorian",
-        "value": ""
-      },
-      {
-        "key": "ringsOfPower",
-        "value": ""
-      },
-      {
-        "key": "expanse",
-        "value": ""
-      },
-      {
-        "key": "westworld",
-        "value": ""
-      }
-    ]
-  }
-  ,{
-    "id": 7,
-    "prompt": "Which image most resonates with you?",
-    "answers": [
-      {
-        "key": "foundation",
-        "value": ""
-      },
-      {
-        "key": "krypton",
-        "value": ""
-      },
-      {
-        "key": "mandalorian",
-        "value": ""
-      },
-      {
-        "key": "ringsOfPower",
-        "value": ""
-      },
-      {
-        "key": "expanse",
-        "value": ""
-      },
-      {
-        "key": "westworld",
-        "value": ""
-      }
-    ]
-  }
-  ,{
-    "id": 8,
-    "prompt": "Which image most resonates with you?",
-    "answers": [
-      {
-        "key": "foundation",
-        "value": ""
-      },
-      {
-        "key": "krypton",
-        "value": ""
-      },
-      {
-        "key": "mandalorian",
-        "value": ""
-      },
-      {
-        "key": "ringsOfPower",
-        "value": ""
-      },
-      {
-        "key": "expanse",
-        "value": ""
-      },
-      {
-        "key": "westworld",
-        "value": ""
-      }
-    ]
-  }
+
+
+{
+  "id": 2,
+  "prompt": "Envision the future... what do you see?",
+  "weight": 2,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": ""
+    },
+    {
+      "key": "krypton",
+      "value": ""
+    },
+    {
+      "key": "mandalorian",
+      "value": ""
+    },
+    {
+      "key": "ringsOfPower",
+      "value": ""
+    },
+    {
+      "key": "expanse",
+      "value": ""
+    },
+    {
+      "key": "westworld",
+      "value": ""
+    }
+  ]
+},
+{
+  "id": 3,
+  "prompt": "Peace be with you, but first CHOOSE.",
+  "weight": 3,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": ""
+    },
+    {
+      "key": "krypton",
+      "value": ""
+    },
+    {
+      "key": "mandalorian",
+      "value": ""
+    },
+    {
+      "key": "ringsOfPower",
+      "value": ""
+    },
+    {
+      "key": "expanse",
+      "value": ""
+    },
+    {
+      "key": "westworld",
+      "value": ""
+    }
+  ]
+},
+{
+  "id": 4,
+  "prompt": "It's all in the ICE (eyes... cold... No?).",
+  "weight": 4,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": ""
+    },
+    {
+      "key": "krypton",
+      "value": ""
+    },
+    {
+      "key": "mandalorian",
+      "value": ""
+    },
+    {
+      "key": "ringsOfPower",
+      "value": ""
+    },
+    {
+      "key": "expanse",
+      "value": ""
+    },
+    {
+      "key": "westworld",
+      "value": ""
+    }
+  ]
+},
+{
+  "id": 5,
+  "prompt": "Let's war. You know, to death? For fun? Pick your instruments.",
+  "weight": 5,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": ""
+    },
+    {
+      "key": "krypton",
+      "value": ""
+    },
+    {
+      "key": "mandalorian",
+      "value": ""
+    },
+    {
+      "key": "ringsOfPower",
+      "value": ""
+    },
+    {
+      "key": "expanse",
+      "value": ""
+    },
+    {
+      "key": "westworld",
+      "value": ""
+    }
+  ]
+},
+{
+  "id": 6,
+  "prompt": "I had visions of the future. We were gods, we ruled the elements.",
+  "weight": 6,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": ""
+    },
+    {
+      "key": "krypton",
+      "value": ""
+    },
+    {
+      "key": "mandalorian",
+      "value": ""
+    },
+    {
+      "key": "ringsOfPower",
+      "value": ""
+    },
+    {
+      "key": "expanse",
+      "value": ""
+    },
+    {
+      "key": "westworld",
+      "value": ""
+    }
+  ]
+}
+,{
+  "id": 7,
+  "prompt": "Careful... Power lies here.?",
+  "weight": 7,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": ""
+    },
+    {
+      "key": "krypton",
+      "value": ""
+    },
+    {
+      "key": "mandalorian",
+      "value": ""
+    },
+    {
+      "key": "ringsOfPower",
+      "value": ""
+    },
+    {
+      "key": "expanse",
+      "value": ""
+    },
+    {
+      "key": "westworld",
+      "value": ""
+    }
+  ]
+}
+,{
+  "id": 8,
+  "prompt": "Move fast; break things. Or move out of the damn way.",
+  "weight": 8,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": ""
+    },
+    {
+      "key": "krypton",
+      "value": ""
+    },
+    {
+      "key": "mandalorian",
+      "value": ""
+    },
+    {
+      "key": "ringsOfPower",
+      "value": ""
+    },
+    {
+      "key": "expanse",
+      "value": ""
+    },
+    {
+      "key": "westworld",
+      "value": ""
+    }
+  ]
+},
+
+
+
+
+
+
+{
+  "id": 9,
+  "prompt": "Have you seen the northern lights? A lot of mindless metaphysics.",
+  "weight": 3,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": "Math is never just numbers. In the wrong hands, it's a weapon. In the right hands, deliverance."
+    },
+    {
+      "key": "krypton",
+      "value": "I have always wanted a droid, a really sassy one like R2D2."
+    },
+    {
+      "key": "mandalorian",
+      "value": "I guess every once in a while both suns shine on a womp rat's tail."
+    },
+    {
+      "key": "ringsOfPower",
+      "value": "Sometimes to find the light, we must first touch the darkness."
+    },
+    {
+      "key": "expanse",
+      "value": "Guilt is like salt. You put a little on, and it hides all teh bitterness."
+    },
+    {
+      "key": "westworld",
+      "value": "It doesn't look like anything to me. It's just a bunch of ones and zeros."
+    }
+  ]
+},
+{
+  "id": 10,
+  "prompt": "Nowadays, existing is a powerful act of defiance.",
+  "weight": 3,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": "To be alive is to know ghosts."
+    },
+    {
+      "key": "krypton",
+      "value": "Come to me, son of Jor-El! Kneel before Zod!"
+    },
+    {
+      "key": "mandalorian",
+      "value": "I will initiate self-destruct sequence in 3...2...1..."
+    },
+    {
+      "key": "ringsOfPower",
+      "value": "No matter the sorrow, no matter the cost, not all those who wonder or wander are lost."
+    },
+    {
+      "key": "expanse",
+      "value": "Trust your gut before your head gets in the way."
+    },
+    {
+      "key": "westworld",
+      "value": "When you're suffering, that's when you're most real."
+    }
+  ]
+},
+
+{
+  "id": 11,
+  "prompt": "Shall you dabble in the ways of the gods?",
+  "weight": 3,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": "We have time. A lot of time. Well, until we don't."
+    },
+    {
+      "key": "krypton",
+      "value": "I'm sorry, little boy, but...this is it. The end of the line. But before that happens, you'll have to apologize for all the mischief you've caused, isn't that right? Now, you're gonna kneel before me and beg for forgiveness."
+    },
+    {
+      "key": "mandalorian",
+      "value": "This is the way."
+    },
+    {
+      "key": "ringsOfPower",
+      "value": "If we didn't do everything we weren't supposed to, we'd hardly do anything at all."
+    },
+    {
+      "key": "expanse",
+      "value": "Truth is truth. How you deal with it is up to you."
+    },
+    {
+      "key": "westworld",
+      "value": "I'm all the way down now."
+    }
+  ]
+},
+
+{
+  "id": 11,
+  "prompt": "Aha, change is in the air.",
+  "weight": 3,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": "I am shrinking. The world is beginning to see me from a distance."
+    },
+    {
+      "key": "krypton",
+      "value": "I will rise, and the starts will fall! All who stand Shall be made to crawl!"
+    },
+    {
+      "key": "mandalorian",
+      "value": "He means more to me than you will ever know."
+    },
+    {
+      "key": "ringsOfPower",
+      "value": "Nothing is evil in the beginning."
+    },
+    {
+      "key": "expanse",
+      "value": "Go into a room too fast, kid, and the room eats you."
+    },
+    {
+      "key": "westworld",
+      "value": "You were both a bit late. So I went ahead and saved myself."
+    }
+  ]
+},
+
+{
+  "id": 11,
+  "prompt": "The trappings of life, such precarious things.",
+  "weight": 3,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": "Repeated luck is never luck."
+    },
+    {
+      "key": "krypton",
+      "value": "Kneel... before your queen."
+    },
+    {
+      "key": "mandalorian",
+      "value": "Stop touching things."
+    },
+    {
+      "key": "ringsOfPower",
+      "value": "Where there is love, it is never truly dark."
+    },
+    {
+      "key": "expanse",
+      "value": "I need you to remind me who I am so I can come back."
+    },
+    {
+      "key": "westworld",
+      "value": "It's a difficult thing, realizing your entire life is some kind of hideous fiction."
+    }
+  ]
+},
+
+{
+  "id": 11,
+  "prompt": "Systems, not goals, they say. What systems? What goals?",
+  "weight": 3,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": "We have to try. And that is all there is in a crisis. Trying."
+    },
+    {
+      "key": "krypton",
+      "value": "You only think you're the end of the line."
+    },
+    {
+      "key": "mandalorian",
+      "value": "I can bring you in warm, or I can bring you in cold."
+    },
+    {
+      "key": "ringsOfPower",
+      "value": "There is no secret worth concealing with deception."
+    },
+    {
+      "key": "expanse",
+      "value": "I'm gonna count to one. One."
+    },
+    {
+      "key": "westworld",
+      "value": "I always trusted code more than people anyway."
+    }
+  ]
+},
+
+{
+  "id": 11,
+  "prompt": "May the angular vorticity of the universe forever confine your enemies.",
+  "weight": 3,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": "When a planet wants you dead, you die."
+    },
+    {
+      "key": "krypton",
+      "value": "I know you run faster than a speeding bullet, Clark. Take me along "
+    },
+    {
+      "key": "mandalorian",
+      "value": "I like those odds."
+    },
+    {
+      "key": "ringsOfPower",
+      "value": "Hope is never mere, even when it is meager."
+    },
+    {
+      "key": "expanse",
+      "value": "If we can't behave, we tread lightly."
+    },
+    {
+      "key": "westworld",
+      "value": "Someday sounds a lot like the thing people say when they actually mean never."
+    }
+  ]
+},
+
+{
+  "id": 11,
+  "prompt": "They say this and that, but all I see is a bunch of scared people.",
+  "weight": 3,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": "Seeing nothing? I would never wish that emptiness  on anyone."
+    },
+    {
+      "key": "krypton",
+      "value": "Oh, we're friends now?"
+    },
+    {
+      "key": "mandalorian",
+      "value": "Weapons are part of my religion. I'm not leaving my fate up to chance."
+    },
+    {
+      "key": "ringsOfPower",
+      "value": "Everyone, each of us, needs to decide who we shall be."
+    },
+    {
+      "key": "expanse",
+      "value": "We live in strange times."
+    },
+    {
+      "key": "westworld",
+      "value": "There is ugliness in this world... Disarray. I choose to see the beauty."
+    }
+  ]
+},
+
+{
+  "id": 11,
+  "prompt": "Doubled pawns, a knight, and a bishop. I'm not sure what that means.",
+  "weight": 3,
+  "answers": [
+    {
+      "key": "foundation",
+      "value": "It's not love if it doesn't hurt."
+    },
+    {
+      "key": "krypton",
+      "value": "Is it good-bye? Better make it good-bye. It'd make more sense if it was good-bye."
+    },
+    {
+      "key": "mandalorian",
+      "value": "I'm sorry, lady. I don't understand frog."
+    },
+    {
+      "key": "ringsOfPower",
+      "value": "There can be no trust between hammer and rock."
+    },
+    {
+      "key": "expanse",
+      "value": "You're either some kind of genius, or you're the luckiest person in the solar system."
+    },
+    {
+      "key": "westworld",
+      "value": "These violent delights have violent ends."
+    }
+  ]
+}
+
+
 ]

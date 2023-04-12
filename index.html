@@ -7,9 +7,27 @@
 <body>
   <div class="frontmatter-container">
     <div class="frontmatter">
+      <h class="context">
+        This planet is not home, at least not to all of us.
+        <br/>
+        <br/>
+        Ever wondered where you <span style="font-style: italic;">really</span> belong?
+        <br/>
+        Here's your chance to find out which of these erudite technocratic worlds is for you.
+        <br/>
+        <br/>
+        You know what to do.
+        <br/>
+        <br/>
+      </h>
       <h1 class="frontmatter-title" id="question-text">
         What is the capital of France?
       </h1>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-bar">
+        <div class="progress-bar-fill" id="progress-bar-fill"/>
+      </div>
     </div>
     <div class="answer-options-container">
       <ul class="answer-options-list">
@@ -52,11 +70,42 @@
         </li>
       </ul>
     </div>
-    <div class="submit-answer-container">
-      <button id="submit-answer-button"></button>
+    <div class="app-button-container">
+      <button id="submit-answer-button" class="app-button"></button>
     </div>
-    <div id="results">
-      <h1 class=""
+    <div id="results-background">
+      <div class="frontmatter-container" id="results">
+        <div class="frontmatter">
+          <h class="context">
+            Look at you, you marvel.
+          </h>
+          <p id="results-tagline">
+            Watch (or re-watch) Westworld. The Oracle has spoken.
+          </p>
+          
+          <h3> Results </h3>
+          <ul class="results-list">
+            <li class="result">
+              <p id="result1" class="result-text">
+                Westworld: 100%
+              </p>
+            </li>
+            <li class="result">
+              <p id="result2" class="result-text">
+                The Matrix: 0%
+              </p>
+            </li>
+            <li class="result">
+              <p id="result3" class="result-text">
+                The Terminator: 0%
+              </p>
+            </li>
+            <div class="app-button-container">
+              <button id="restart-button" class="app-button">Restart</button>
+            </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 
