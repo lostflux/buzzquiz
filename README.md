@@ -5,7 +5,7 @@
 This program simulates a BuzzFeed quiz to recommend which dystopian world
 is ideal for the user.
 
-[deployed url](http://url-if-deployed-here)
+[deployed url](https://quizzical-8tlk.onrender.com/)
 
 ## What Worked Well
 
@@ -29,6 +29,7 @@ I did both the CSS focus and the Javascript focus.
 - I also added a "reset" button and a semi-transparent overlay for the
   "quiz complete" message that closes the message when clicked,
   thus simulating the "clicking outside the modal to dismiss it" behavior.
+- I also made the sire responsive to different screen sizes.
 
 ### On the Javascript Side
 
