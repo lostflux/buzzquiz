@@ -1,41 +1,36 @@
-# Title
-
-*Amittai, BuzzFeed Quiz*
-
-> **Note**
->
-> I got into the class late (end of week 2), and the prof said he would
-> give me time to catch up with the assignments that had alredy
-> happened.
-> Consequently, I submitted this assignment a day late.
-
+# BuzzFeed Quiz
 
 This program simulates a BuzzFeed quiz to recommend which dystopian world
 is ideal for the user.
 
-[deployed url](https://quizzical-8tlk.onrender.com/)
+I love Sci-Fi and Dystopian fiction, but knowing which ones to explore
+first gets overwhelming in the current age of a trillion streaming services.
 
-## What Worked Well
+This quiz recommends one of six dystopian worlds based on the user's
+responses to a series of questions.
 
-Most of the Javascript stuff was straightforward.
-CSS was a bit tricky especially re. trying to avoid dead code.
+This site is live at [buzzquiz.amitt.ai](https://buzzquiz.amitt.ai), amd
+is deployed via [Netlify](https://www.netlify.com/).
 
+<div align="center">
 
-## What Didn't
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f43ca630-d354-4495-8c12-b721b80e41b5/deploy-status)](https://app.netlify.com/sites/stellular-horse-218921/deploys)
 
-Nothing really.  
+</div>
 
-## Extra Credit
+## Implementation Description
 
 I did both the CSS focus and the Javascript focus.
 
-> **_Why include the Javascript file(s) at the end of the body?_**
+> **Note**
+>
+> _Why include the Javascript file(s) at the end of the body?_
 >
 > I'm guessing the browser loads page content sequentially.
 > Since Javascript bundle code can be substantial, loading the Javascript file
 > can take significant time.
 >
-> HOwever, in some cases the JS is not _needed_ for the initial render of the 
+> However, in some cases the JS is not _needed_ for the initial render of the
 > page! Therefore, including the JS at the end of the body allows the browser
 > to load most page content first, then load the JS in the background.
 >
@@ -57,9 +52,9 @@ I did both the CSS focus and the Javascript focus.
 
 ### On the Javascript Side
 
-- I implemented the described API in the assignment and used Javascript
-  to parse JSON and populate the DOM.
-
+- I implemented an API that uses Javascript
+  to parse JSON and populate the DOM
+  (somewhat what [React](https://reactjs.org/) does, but at a simplified level).
 - I also tried weighting the prompts differently based on how "relevant"
   I found each to be (how "representative" it was of the movie).
   Each prompt has a `weight` property and whoever wins the round
