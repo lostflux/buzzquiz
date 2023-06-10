@@ -9,8 +9,9 @@ first gets overwhelming in the current age of a trillion streaming services.
 This quiz recommends one of six dystopian worlds based on the user's
 responses to a series of questions.
 
-This site is live at [buzzquiz.amitt.ai](https://buzzquiz.amitt.ai), amd
-is deployed via [Netlify](https://www.netlify.com/).
+This site is live at [`buzzquiz.amitt.ai`](https://buzzquiz.amitt.ai).
+
+## Deploy Status
 
 <div align="center">
 
